@@ -39,6 +39,7 @@
     text-align: center;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
 .coin-price{
@@ -55,4 +56,12 @@
 
 .coin-percent{
     width: 100%;
+}
+
+.red{
+    color: #ff0000;
+}
+
+.green{
+    color: #00ff00;
 }
