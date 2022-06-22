@@ -1,7 +1,7 @@
 import React from 'react'
 import './coins.scss'
 
-const coins = ({name, image, symbol, price, priceChange, volume}) => {
+const coins = ({name, image, symbol, price, priceChange, volume, marketCap}) => {
   return (
     <div className='coin-container'>
         <div className='coin-row'>
@@ -12,11 +12,12 @@ const coins = ({name, image, symbol, price, priceChange, volume}) => {
             </div>
             <div className='coin-data'>
                 <p className='coin-price'>${price}</p>
+                <p className='coin-volume'>${volume.toLocaleString()}</p>
                 {priceChange < 0 ? (
                     <p className='coin-percent red'>{priceChange.toFixed(2)}%</p>) : (
                         <p className='coin-percent green'>{priceChange.toFixed(2)}%</p>
                     )}
-                    <p className='coin-volume'>${volume.toLocaleString()}</p>
+                    <p className='coin-marketcap'>${marketCap.toLocaleString()}</p>
             </div>
         </div>
     </div>

@@ -42,7 +42,8 @@ const filteredCoins = coins.filter(coin =>
           symbol={coin.symbol} 
           price={coin.current_price} 
           priceChange={coin.price_change_percentage_24h}
-          volume={coin.total_volume}/>
+          volume={coin.total_volume}
+          marketCap={coin.market_cap}/>
         );
       })}
     </div>
