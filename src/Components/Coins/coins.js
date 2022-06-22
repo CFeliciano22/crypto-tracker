@@ -1,4 +1,5 @@
 import React from 'react'
+import './coins.scss'
 
 const coins = ({name, image, symbol, price, volume}) => {
   return (
