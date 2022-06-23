@@ -1,6 +1,8 @@
 .coin-header__cointainer{
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
+    font-weight: bold; 
+    font-size: 1.25rem;
 }
 
 .coin-header__row{
@@ -13,7 +15,6 @@
 }
 
 .coin-name{
-    font-size: 1rem;
     width: 9.375rem;
     margin-left: 2.5rem;
 }
